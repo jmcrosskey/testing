@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+"name": "Kill Superfish",
+"version": "0.5",
+"default_locale": "en",
+"description": "A utility to cut the crap from civiCRM / Drupal administration web app.",
+"permissions": ["https://*/civicrm/*", "http://*/civicrm/*"],
+"content_scripts": [
+    {
+      "matches": ["http://*/civicrm/*"],
+      "js": ["killfish.js"]
+    }
+  ],
+"browser_action": {
+  "default_title": "Kill Superfish"
+ }
+}
